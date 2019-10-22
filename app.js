@@ -105,7 +105,7 @@ setInterval(() => {
  * Event handler keydown, will be called every time a key is pressed
  */
 document.body.addEventListener('keydown', event => {
-    if (event.keyCode > 36 && event.keyCode < 41) {
+    if (event.keyCode > 36 && event.keyCode < 41 || event.keyCode == 32) {
         // swith direction
         ball.setDirection(keyActions[event.keyCode])
     } else if (event.keyCode > 48 && event.keyCode < 58) {
